@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: eubold;
+  src: url('./assets/fonts/EurostileBold.ttf');
+}
+@font-face {
+  font-family: euextd;
+  src: url('./assets/fonts/EurostileExtended.ttf');
+}
+@font-face {
+  font-family: euobli;
+  src: url('./assets/fonts/EurostileOblique.ttf');
+}
+@font-face {
+  font-family: eunorm;
+  src: url('./assets/fonts/EuroStyle\ Normal.ttf');
+}
