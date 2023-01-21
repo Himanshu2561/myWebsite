@@ -1,5 +1,5 @@
-import Avtar from '../assets/Avtar.svg';
-import Devices from '../assets/Devices.svg';
+const avt = 'Avtar.svg'
+const dev = 'Devices.svg'
 
 const Hero = () => {
     return (
@@ -8,11 +8,11 @@ const Hero = () => {
             <p>I design and code beautifully simple things, and I love what I do.</p>
 
             <div className='my-10'>
-                <img className="mx-auto scale-75 drop-shadow-lg" src={Avtar} alt="img" />
+                <img className="mx-auto scale-75 drop-shadow-lg" src={avt} alt="img" />
             </div>
 
             <div className='mt-20'>
-                <img className="mx-auto" src={Devices} alt="" />
+                <img className="mx-auto" src={dev} alt="" />
             </div>
         </div>
     )
