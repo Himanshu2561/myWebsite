@@ -58,24 +58,26 @@ const Cards = () => {
     <div className="mx-8">
       <div className="text-black text-center py-10">
         <p className="font-eubold text-lg">My Recent Work</p>
-        <p className="py-5">Here are a few past design projects I've worked on. Want to see more? <a className="text-[#6e07f3]" href="mailto:himanshu.rathore2561@gmail.com">Email me</a>.</p>
+        <p className="py-5 lg:text-lg md:w-3/4 m-auto">Here are a few past design projects I've worked on. Want to see more? <a className="text-[#6e07f3]" href="mailto:himanshu.rathore2561@gmail.com">Email me</a>.</p>
       </div>
 
       <div className="flex flex-col">
 
-        {data.map(data => {
-          return (
-            <div key={data.id} className='relative text-center w-full hover:opacity-100 mb-10 drop-shadow-lg'>
-              <img className='block w-full h-auto rounded-lg' src={data.img} alt="" />
-              <div className='absolute inset-0 w-full h-full opacity-0 bg-[#141c3a] text-white hover:opacity-100 rounded-lg transition ease-in-out duration-500'>
-                <div className='absolute inset-1/4 text-center text-sm'>
-                  <p className='capitalize'>{data.text}</p>
-                  <div className="mt-5"><button className='rounded-full border-2 border-[#6e07f3] bg-transparent px-4 py-2 hover:bg-[#6e07f3] transition ease-in-out duration-500 capitalize'><a href={data.link} target='_blank'>{data.type}</a> </button></div>
+        <span className="lg:flex lg:flex-wrap lg:justify-evenly md:flex md:flex-wrap md:justify-evenly">
+          {data.map(data => {
+            return (
+              <div key={data.id} className='lg:w-1/4 lg:mx-5 md:w-[45%] md:mx-1 relative text-center w-full hover:opacity-100 mb-10 drop-shadow-lg'>
+                <img className='block w-full h-auto rounded-lg' src={data.img} alt="" />
+                <div className='absolute inset-0 w-full h-full opacity-0 bg-[#141c3a] text-white hover:opacity-100 rounded-lg transition ease-in-out duration-500'>
+                  <div className='absolute inset-1/4 text-center text-sm lg:inset-10 md:inset-5'>
+                    <p className='capitalize'>{data.text}</p>
+                    <div className="mt-5"><button className='rounded-full border-2 border-[#6e07f3] bg-transparent px-4 py-2 hover:bg-[#6e07f3] transition ease-in-out duration-500 capitalize'><a href={data.link} target='_blank'>{data.type}</a> </button></div>
+                  </div>
                 </div>
               </div>
-            </div>
-          )
-        })}
+            )
+          })}
+        </span>
 
         <div className='text-center my-10'>
           <a href="https://github.com/Himanshu2561" target='_blank'>
