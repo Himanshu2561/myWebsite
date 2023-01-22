@@ -80,9 +80,9 @@ const Cards = () => {
         <div className='text-center my-10'>
           <a href="https://github.com/Himanshu2561" target='_blank'>
             <button className='border-2 p-2 rounded-full border-[#6e07f3] hover:bg-[#6e07f3] transition ease-in-out duration-500 hover:text-white'>
-              <div className='flex'>
+              <div className='flex text-center items-center'>
                 <img className='mx-2' src={GH} alt="" />
-                <p className='mx-2 font-medium'>See More On GitHub</p>
+                <p className='mx-2 font-medium capitalize'>See More On GitHub</p>
               </div>
             </button>
           </a>
