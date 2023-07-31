@@ -2,6 +2,13 @@ const GH = 'github.svg'
 
 const data = [
   {
+    id: 8,
+    img: 'mernauth.jpg',
+    type: 'visit website',
+    text: 'MERN Authentication - Used JWT with HTTP-Only-Cookie and Tailwind CSS Library',
+    link: 'https://fullstackauthapp.onrender.com/',
+  },
+  {
     id: 7,
     img: 'eryk.jpg',
     type: 'visit website',
